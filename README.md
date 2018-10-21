@@ -13,7 +13,7 @@ or persistence framework (Hibernate, JOOQ, myBatis,...)
 * Works with any JDBC driver
 * Configure the specific driver options using the driver properties
 * Inspect and control the driver at runtime through JMC
-** A JMX entry is created for each unique connection string  
+  * A JMX entry is created for each unique connection string  
 
 ## Using the dedup driver
 To benefit from the deduplication feature simple:
