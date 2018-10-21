@@ -27,7 +27,7 @@
 
     <name>jdbc-string-deduplicator</name>
     <description>A JDBC driver which performs fast string deduplication. It reduces the memory requirements of
-    existing applications without the need to make any change.</description>
+    existing applications without the need to make any change. Simply change the JDBC connection string</description>
     <url>http://www.externalizer4j.com</url>
 
     <licenses>
