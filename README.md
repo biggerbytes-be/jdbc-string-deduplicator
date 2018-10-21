@@ -1,4 +1,4 @@
-# Dedup the Strinf deduplicating JDBC driver
+# Dedup the String deduplicating JDBC driver
 
 A full featured JDBC wrapping driver which deduplicates String instances. 
 This driver works with any existing JDBC driver/database.
@@ -34,7 +34,7 @@ Alternatively one can specify the fully qualified name of the wrapped driver as 
 
 `jdbc:dedup:fully_qualified_driver_classname:<subprotocol>:<subname>`
 
-Configuration examples
+###Configuration examples
 
 From
 
