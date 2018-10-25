@@ -23,7 +23,7 @@
 
     <groupId>be.biggerbytes</groupId>
     <artifactId>jdbc-string-deduplicator</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2018.10.0-SNAPSHOT</version>
 
     <name>jdbc-string-deduplicator</name>
     <description>A JDBC driver which performs fast string deduplication. It reduces the memory requirements of
@@ -108,6 +108,18 @@
                         <phase>verify</phase>
                         <goals>
                             <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>3.3.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
