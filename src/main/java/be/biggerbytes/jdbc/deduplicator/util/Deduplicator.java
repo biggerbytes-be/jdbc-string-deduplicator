@@ -29,8 +29,12 @@ import java.util.TreeMap;
 public class Deduplicator {
     private final DedupSettings settings;
     private final DedupInfo mbean;
+
+    /**
+     * Recently encountered instances are kept in this size limited Map. The entries
+     * in this Map are sorted based on their access order
+     */
     Map<String, String> recent;
-    Map<String, Integer> all = new TreeMap<>();
 
 
     public Deduplicator(DedupContext context) {
@@ -40,6 +44,9 @@ public class Deduplicator {
         init();
     }
 
+    /**
+     * Initialize if needed
+     */
     protected void init() {
 
     }
@@ -106,7 +113,7 @@ public class Deduplicator {
         // If other Deduplicator instance already deduplicated the string
         // then the instance may very well be already in there
         //
-        // Older JVMs didn't GC these instance which ended up hurting memory
+        // Older JVMs didn't GC these instances which ended up hurting memory
         // Disable string interning in that case
         //
         if (settings.isInterningStrings())
@@ -116,6 +123,9 @@ public class Deduplicator {
         return s;
     }
 
+    /**
+     *
+     */
     public void optimize() {
         recent.clear();
     }

@@ -34,7 +34,7 @@ Alternatively one can specify the fully qualified name of the wrapped driver as 
 
 `jdbc:dedup:fully_qualified_driver_classname:<subprotocol>:<subname>`
 
-###Configuration examples
+### Configuration examples
 
 From
 
@@ -47,6 +47,20 @@ Into
 Or alternatively
 
 `jdbc:dedup:org.h2.Driver:h2:mem:` 
+
+# Maven dependency
+
+Adding _dedup_ to you project is easy. You don't even need a compile <scope/> dependency. Just use the 
+one below 
+
+```xml
+<dependency>
+    <groupId>be.biggerbytes</groupId>
+    <artifactId>jdbc-string-deduplicator</artifactId>
+    <version>2018.11.0-SNAPSHOT</version>
+    <scope>runtime</scope>
+</dependency>
+```
 
 # More information and examples
 
