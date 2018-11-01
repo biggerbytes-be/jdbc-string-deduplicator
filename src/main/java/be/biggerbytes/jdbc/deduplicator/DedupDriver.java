@@ -115,8 +115,7 @@ public class DedupDriver implements Driver {
 
         try {
             Class<Driver> driverClass = (Class<Driver>) Class.forName(driverFQCN);
-            Driver d = driverClass.newInstance();
-            return d;
+            return driverClass.newInstance();
         } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
             throw new SQLException("Can not instantiate driver: " + driverFQCN, e);
         }

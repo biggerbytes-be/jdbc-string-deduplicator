@@ -21,7 +21,6 @@ import be.biggerbytes.jdbc.deduplicator.DedupSettings;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * String deduplication happens in this helper class.
